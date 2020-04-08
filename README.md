@@ -22,7 +22,7 @@ $ npm install @dre1080/babel-preset-nuxt --save-dev
 
 Just add the following to `nuxt.config.js`:
 
-```json
+```js
 babel: {
   presets: ['@dre1080/nuxt'],
 }
