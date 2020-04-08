@@ -1,0 +1,15 @@
+{
+  "name": "@dre1080/babel-preset-nuxt",
+  "version": "1.0.0",
+  "description": "Sharable Babel preset for Nuxt projects",
+  "author": "Andrew Wayne <lifeandcoding@gmail.com>",
+  "homepage": "https://github.com/dre1080/babel-preset-nuxt",
+  "repository": "dre1080/babel-preset-nuxt",
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@nuxt/babel-preset-app": "^2.12.2"
+  }
+}
