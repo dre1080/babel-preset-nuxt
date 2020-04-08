@@ -1,6 +1,4 @@
-import { declare } from '@babel/helper-plugin-utils';
-
-export default declare((api) => {
+module.exports = function babelPresetNuxt(api) {
   // see docs about api at https://babeljs.io/docs/en/config-files#apicache
   api.assertVersion('^7.0.0');
 
@@ -9,7 +7,7 @@ export default declare((api) => {
   const presets = [
     env === 'test'
       ? [
-          '@babel/preset-env',
+          require('@babel/preset-env').default,
           {
             targets: {
               node: 'current',
@@ -25,4 +23,4 @@ export default declare((api) => {
     presets,
     plugins,
   };
-});
+};
