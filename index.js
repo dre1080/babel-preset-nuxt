@@ -7,17 +7,26 @@ module.exports = function babelPresetNuxt(api) {
   const presets = [
     env === 'test'
       ? [
-          require('@babel/preset-env').default,
+          require('@babel/preset-env'),
           {
+            corejs: { version: 3 },
             targets: {
               node: 'current',
             },
           },
         ]
-      : require.resolve('@nuxt/babel-preset-app'),
+      : [
+          require('@nuxt/babel-preset-app'),
+          {
+            corejs: { version: 3 },
+          },
+        ],
   ];
 
-  const plugins = ['@babel/plugin-proposal-optional-chaining'];
+  const plugins = [
+    require('@babel/plugin-proposal-optional-chaining'),
+    require('@babel/proposal-nullish-coalescing-operator'),
+  ];
 
   return {
     presets,
