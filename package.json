@@ -16,6 +16,6 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/runtime-corejs3": "^7.9.2",
     "@nuxt/babel-preset-app": "^2.12.2",
-    "corejs": "^3.6.5"
+    "core-js": "^3.6.5"
   }
 }
