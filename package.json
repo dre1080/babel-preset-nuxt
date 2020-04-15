@@ -1,6 +1,6 @@
 {
   "name": "@dre1080/babel-preset-nuxt",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Sharable Babel preset for Nuxt projects",
   "author": "Andrew Wayne <lifeandcoding@gmail.com>",
   "homepage": "https://github.com/dre1080/babel-preset-nuxt",
