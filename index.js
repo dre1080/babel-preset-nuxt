@@ -26,6 +26,7 @@ module.exports = function babelPresetNuxt(api) {
   const plugins = [
     require('@babel/plugin-proposal-optional-chaining'),
     require('@babel/plugin-proposal-nullish-coalescing-operator'),
+    require('@babel/plugin-syntax-dynamic-import'),
   ];
 
   return {
