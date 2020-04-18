@@ -9,12 +9,11 @@ module.exports = function babelPresetNuxt(api) {
       ? [
           require('@babel/preset-env'),
           {
-            targets: {
-              node: 'current',
-            },
+            corejs: { version: 3 },
+            targets: { node: 'current' },
           },
         ]
-      : [require('@nuxt/babel-preset-app')],
+      : [require('@nuxt/babel-preset-app'), { corejs: { version: 3 } }],
   ];
 
   const plugins = [
