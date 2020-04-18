@@ -9,13 +9,13 @@
 **With Yarn**
 
 ```sh
-$ yarn add --dev @dre1080/babel-preset-nuxt
+$ yarn add --dev core-js@2 @babel/runtime-corejs2 @dre1080/babel-preset-nuxt
 ```
 
 **With npm**
 
 ```sh
-$ npm install @dre1080/babel-preset-nuxt --save-dev
+$ npm install core-js@2 @babel/runtime-corejs2 @dre1080/babel-preset-nuxt --save-dev
 ```
 
 ## Usage
